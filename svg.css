@@ -1,5 +1,5 @@
 body {
-    background-color: #ffcccc;
+    background-color:	 #99e6ff;
 }
 
 font {
@@ -7,4 +7,9 @@ font {
     font-weight: bold;
     text-align: center;
     font-family: 'Shrikhand', cursive;
+}
+
+p{
+  font-size:20px;
+  font-family:'Shrikhand', cursive;
 }
