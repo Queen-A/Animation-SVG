@@ -13,9 +13,49 @@
     <font style="color:green;">Christmas</font>
     <font style="color:whitesmoke;">!</font>
 
-  <svg width="100%" viewBox="0 0 800 400">
-        <polygon points="100,0 90,15 95,15 85,30 90,30 80,45 120,45 110,30 115,30 105,15 110,15" fill="#B5EDFF">
-      <rect width="40" height="60" x="145" y="298" fill="#592E00"/>
+  <svg width="100%" viewBox="0 0 700 350">
+      <polygon points="110 50 60 100 85 100 35 150 60 150 10 210 210 210 160 150 185 150 135 100 160 100" fill="lightgreen" opacity="0">
+      <animate id="polygon1" attributeName="opacity" from="0" to="1" dur="5s" begin="0s; polygon2.end"/>
+      <animate id="polygon2" attributeName="opacity" from="1" to="0" dur="5s" begin= "polygon1.end"/>
+    </polygon>
+      <rect width="40" height="110" x="90" y="210" fill="#592E00">
+      <animate id="rect1" attributeName="opacity" from="0" to="1" dur="5s" begin="0s; rect2.end"/>
+      <animate id="rect2" attributeName="opacity" from="1" to="0" dur="5s" begin= "rect1.end"/>
+    </rect>
+      <circle cx="110" cy="50" r="3" fill="red"/>
+      <circle cx="60" cy="100" r="3" fill="green">
+      <animate attributeName = "cx" from= "60" to="85" dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="35" cy="150" r="3" fill="white">
+      <animate attributeName = "cx" from= "35" to="60" dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="10" cy="210" r="3" fill="green">
+      <animate attributeName = "cx" from= "10" to="210" dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="210" cy="210" r="3" fill="green">
+      <animate attributeName = "cx" from= "10" to="185 dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="185" cy="150" r="3" fill="white">
+      <animate attributeName = "cx" from= "185" to="160" dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="160" cy="100" r="3" fill="green">
+      <animate attributeName = "cx" from= "160" to="135" dur="5s" begin="click" fill="freeze"/>
+      </circle>
+      <circle cx="650" cy="275" r="40" fill="white"/>
+      <circle cx="650" cy="210" r="30" fill="white"/>
+      <circle cx="650" cy="165" r="20" fill="white"/>
+      <rect x="620" y="140" width="60" height="10"/>
+      <rect x="630" y="110" width="40" height="40"/>
+      <circle cx="640" cy="160" r="5">
+      <animate id="circle1" attributeName="cx" from="640" to="620" dur=".1s" begin="0s; circle2.end" fill="freeze"/>
+      <animate id="circle2" attributeName="cx" from="620" to="640" dur=".1s" begin="circle1.end"/>
+      </circle>
+      <circle cx="660" cy="160" r="5">
+      <animate id="circle1" attributeName="cx" from="680" to="660" dur=".2s" begin="0s; circle2.end"  fill="freeze"/>
+      <animate id="circle2" attributeName="cx" from="660" to="680" dur=".2s" begin="circle1.end"/>
+      </circle>
+      <polygon points="645,170 670,175 645,180" fill="orange"/>
+</svg>
       </svg>
   </body>
 </html>
